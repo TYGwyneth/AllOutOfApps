@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400);
+
+html {
+
+}
+
+body {
+	font-family: "Raleway";
+	//background-color: #70f5fc;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+#pageWrap {
+	height: 100%;
+}
+
+#phoneWrap {
+	background: url("phone.png") no-repeat;
+	max-width: 337px;
+	height: 673px;
+	margin: 0px auto;
+	margin-top: 70px;
+	padding-top: 93px;
+	padding-left: 20px;
+}
+
+#screen {
+	width: 260px;
+	height: 460px;
+	overflow: hidden;
+}
+
+#appWrap {
+	max-width: 150px;
+	margin: 0px auto;
+	padding-top: 120px;
+}
+
+#appImg {
+	max-width: 150px;
+	height: 150px;
+	background-size: 100% 100%;
+	border-radius: 30px; 
+}
+
+#appTitle {
+	width: 150px;
+	height: 125px;
+	text-align: center;
+	color: white;
+	overflow: auto;
+}
+
+.buttonBox {
+	width: 200px;
+	margin: 0px auto;
+	text-align: center;
+	padding-top: 280px;
+}
+
+.button {
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+}
+
+.spinner {
+  position: absolute;
+  top: 320px;
+  left: 650px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  margin: 0px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
