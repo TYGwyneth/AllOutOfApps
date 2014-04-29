@@ -34,8 +34,8 @@ function search() {
 
 }
 
-var background = Math.floor((Math.random()*5)+1),
-    colorNr = Math.floor((Math.random()*5));
+var background = Math.floor((Math.random()*5)+1);
+var colorNr = Math.floor((Math.random()*5));
 
 color = (["70f5fc","70fd7a","ff7471","294da5","ffb270"]);
 console.log(color);
