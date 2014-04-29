@@ -71,15 +71,14 @@ a:active {text-decoration:none;}
 }
 
 .spinner {
-  position: absolute;
-  top: 320px;
-  left: 650px;
+  position: relative;
   width: 80px;
   height: 80px;
   background-color: #fff;
   border-radius: 10px;
 
   margin: 0px auto;
+  margin-top: 150px;
   -webkit-animation: rotateplane 1.2s infinite ease-in-out;
   animation: rotateplane 1.2s infinite ease-in-out;
 }
