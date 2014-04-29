@@ -13,7 +13,7 @@ function toScreen(app) {
 
 	console.log(app.results);
 
-  	app = '<a href="'+app.results[nr].trackViewUrl+'"><img src="'+app.results[nr].artworkUrl512+'" id="appImg" ></div> <div id="appTitle"> '+app.results[nr].trackName+' </div> </a>';
+  	app = '<a href="'+app.results[nr].trackViewUrl+'" target=_blank ><img src="'+app.results[nr].artworkUrl512+'" id="appImg" ></div> <div id="appTitle"> '+app.results[nr].trackName+' </div> </a>';
   	$(".spinner").fadeOut();
   	$('#appWrap').append(app);
   	$(".buttonBox").css("padding-top", "0px");
