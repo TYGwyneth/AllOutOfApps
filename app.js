@@ -2,13 +2,13 @@ $(document).ready(function () {
 
 function toScreen(app) {
 
-	i = 0
+	var i = 0
 	$.each(app.results, function(index, app){
 		i++
 	});
 	console.log(i);
 
-	nr = Math.floor((Math.random()*i)+1);
+	var nr = Math.floor((Math.random()*i)+1);
 	console.log(nr);
 
 	console.log(app.results);
@@ -34,8 +34,8 @@ function search() {
 
 }
 
-background = Math.floor((Math.random()*5)+1);
-colorNr = Math.floor((Math.random()*5));
+var background = Math.floor((Math.random()*5)+1),
+    colorNr = Math.floor((Math.random()*5));
 
 color = (["70f5fc","70fd7a","ff7471","294da5","ffb270"]);
 console.log(color);
