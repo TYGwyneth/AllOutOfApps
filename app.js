@@ -47,7 +47,7 @@ $("#screen").css("background-size", "cover");
 $(".spinner").hide();
 
 $("#getApp").click(function(){
-	
+
 	$('#appWrap').slideUp();
 	document.getElementById("appWrap").innerHTML = ""
 	$(".buttonBox").fadeOut();
