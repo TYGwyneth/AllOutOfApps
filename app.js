@@ -36,6 +36,9 @@ function search() {
 
 var background = Math.floor((Math.random()*5)+1);
 var colorNr = Math.floor((Math.random()*5));
+var phoneNr = Math.floor((Math.random()*3)+1);
+
+$("#phoneWrap").css("background", "url('phone"+phoneNr+".png') no-repeat");
 
 color = (["70f5fc","70fd7a","ff7471","294da5","ffb270"]);
 console.log(color);
@@ -47,7 +50,7 @@ $("#screen").css("background-size", "cover");
 $(".spinner").hide();
 
 $("#getApp").click(function(){
-
+	
 	$('#appWrap').slideUp();
 	document.getElementById("appWrap").innerHTML = ""
 	$(".buttonBox").fadeOut();
