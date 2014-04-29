@@ -2,18 +2,18 @@ $(document).ready(function () {
 
 function toScreen(app) {
 
-	i = 0
+	var i = 0
 	$.each(app.results, function(index, app){
 		i++
 	});
 	console.log(i);
 
-	nr = Math.floor((Math.random()*i)+1);
+	var nr = Math.floor((Math.random()*i)+1);
 	console.log(nr);
 
 	console.log(app.results);
 
-  	app = '<a href="'+app.results[nr].trackViewUrl+'"><img src="'+app.results[nr].artworkUrl512+'" id="appImg" ></div> <div id="appTitle"> '+app.results[nr].trackName+' </div> </a>';
+  	app = '<a href="'+app.results[nr].trackViewUrl+'" target=_blank ><img src="'+app.results[nr].artworkUrl512+'" id="appImg" ></div> <div id="appTitle"> '+app.results[nr].trackName+' </div> </a>';
   	$(".spinner").fadeOut();
   	$('#appWrap').append(app);
   	$(".buttonBox").css("padding-top", "0px");
@@ -34,8 +34,11 @@ function search() {
 
 }
 
-background = Math.floor((Math.random()*5)+1);
-colorNr = Math.floor((Math.random()*5));
+var background = Math.floor((Math.random()*5)+1);
+var colorNr = Math.floor((Math.random()*5));
+var phoneNr = Math.floor((Math.random()*3)+1);
+
+$("#phoneWrap").css("background", "url('phone"+phoneNr+".png') no-repeat");
 
 color = (["70f5fc","70fd7a","ff7471","294da5","ffb270"]);
 console.log(color);
